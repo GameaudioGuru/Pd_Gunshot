@@ -1,0 +1,1 @@
+DECLARE_EFFECT("tutorial_laser", Hv_tutorial_laser_UnityPlugin)

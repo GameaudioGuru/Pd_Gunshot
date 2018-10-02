@@ -1,0 +1,6 @@
+; Hv_tutorial_laser_WwiseSourceAuthPlugin.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Hv_tutorial_laser_WwiseSourceAuthPlugin"
+
+EXPORTS
+    AkCreatePlugin

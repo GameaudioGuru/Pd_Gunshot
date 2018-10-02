@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../source/heavy/HeavyContext.cpp" />
+    <ClCompile Include="../source/heavy/Heavy_tutorial_laser.cpp" />
+    <ClCompile Include="../source/heavy/HvControlBinop.c" />
+    <ClCompile Include="../source/heavy/HvControlCast.c" />
+    <ClCompile Include="../source/heavy/HvControlDelay.c" />
+    <ClCompile Include="../source/heavy/HvControlIf.c" />
+    <ClCompile Include="../source/heavy/HvControlRandom.c" />
+    <ClCompile Include="../source/heavy/HvControlSlice.c" />
+    <ClCompile Include="../source/heavy/HvControlSystem.c" />
+    <ClCompile Include="../source/heavy/HvControlUnop.c" />
+    <ClCompile Include="../source/heavy/HvControlVar.c" />
+    <ClCompile Include="../source/heavy/HvHeavy.cpp" />
+    <ClCompile Include="../source/heavy/HvLightPipe.c" />
+    <ClCompile Include="../source/heavy/HvMessage.c" />
+    <ClCompile Include="../source/heavy/HvMessagePool.c" />
+    <ClCompile Include="../source/heavy/HvMessageQueue.c" />
+    <ClCompile Include="../source/heavy/HvSignalBiquad.c" />
+    <ClCompile Include="../source/heavy/HvSignalLine.c" />
+    <ClCompile Include="../source/heavy/HvSignalVar.c" />
+    <ClCompile Include="../source/heavy/HvTable.c" />
+    <ClCompile Include="../source/heavy/HvUtils.c" />
+    <ClCompile Include="../source/unity/AudioPluginUtil.cpp" />
+    <ClCompile Include="../source/unity/Hv_tutorial_laser_AudioPlugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../source/heavy/HeavyContext.hpp" />
+    <ClInclude Include="../source/heavy/HeavyContextInterface.hpp" />
+    <ClInclude Include="../source/heavy/Heavy_tutorial_laser.h" />
+    <ClInclude Include="../source/heavy/Heavy_tutorial_laser.hpp" />
+    <ClInclude Include="../source/heavy/HvControlBinop.h" />
+    <ClInclude Include="../source/heavy/HvControlCast.h" />
+    <ClInclude Include="../source/heavy/HvControlDelay.h" />
+    <ClInclude Include="../source/heavy/HvControlIf.h" />
+    <ClInclude Include="../source/heavy/HvControlRandom.h" />
+    <ClInclude Include="../source/heavy/HvControlSlice.h" />
+    <ClInclude Include="../source/heavy/HvControlSystem.h" />
+    <ClInclude Include="../source/heavy/HvControlUnop.h" />
+    <ClInclude Include="../source/heavy/HvControlVar.h" />
+    <ClInclude Include="../source/heavy/HvHeavy.h" />
+    <ClInclude Include="../source/heavy/HvHeavyInternal.h" />
+    <ClInclude Include="../source/heavy/HvLightPipe.h" />
+    <ClInclude Include="../source/heavy/HvMath.h" />
+    <ClInclude Include="../source/heavy/HvMessage.h" />
+    <ClInclude Include="../source/heavy/HvMessagePool.h" />
+    <ClInclude Include="../source/heavy/HvMessageQueue.h" />
+    <ClInclude Include="../source/heavy/HvSignalBiquad.h" />
+    <ClInclude Include="../source/heavy/HvSignalLine.h" />
+    <ClInclude Include="../source/heavy/HvSignalVar.h" />
+    <ClInclude Include="../source/heavy/HvTable.h" />
+    <ClInclude Include="../source/heavy/HvUtils.h" />
+    <ClInclude Include="../source/unity/AudioPluginInterface.h" />
+    <ClInclude Include="../source/unity/AudioPluginUtil.h" />
+    <ClInclude Include="../source/unity/PluginList.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F748C943-E015-44C9-A1CE-B5125DB06999}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace></RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\build\win\x86\debug\</OutDir>
+    <IntDir>$(SolutionDir)intermediate\win\x86\debug\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\build\win\x64\debug\</OutDir>
+    <IntDir>$(SolutionDir)intermediate\win\x64\debug\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\build\win\x86\release\</OutDir>
+    <IntDir>$(SolutionDir)intermediate\win\x86\release\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\build\win\x64\release\</OutDir>
+    <IntDir>$(SolutionDir)intermediate\win\x64\release\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>mincore.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib; ole32.lib; system32.lib; advapi32.dll</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>mincore.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib; ole32.lib; system32.lib; advapi32.dll</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader />
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>mincore.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib; ole32.lib; system32.lib; advapi32.dll</IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader />
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;HV_SIMD_SSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>mincore.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib; ole32.lib; system32.lib; advapi32.dll</IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

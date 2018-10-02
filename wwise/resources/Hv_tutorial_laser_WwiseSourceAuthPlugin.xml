@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2018 Enzien Audio, Ltd.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions, and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the phrase "powered by heavy",
+   the heavy logo, and a hyperlink to https://enzienaudio.com, all in a visible
+   form.
+
+  2.1 If the Application is distributed in a store system (for example,
+      the Apple "App Store" or "Google Play"), the phrase "powered by heavy"
+      shall be included in the app description or the copyright text as well as
+      the in the app itself. The heavy logo will shall be visible in the app
+      itself as well.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<PluginModule>
+  <SourcePlugin Name="tutorial_laser" CompanyID="64" PluginID="7648" EngineDllName="Hv_tutorial_laser_WwiseSourcePlugin">
+    <PluginInfo CanUnlink="true">
+      <PlatformSupport>
+        <Platform Name="Android"></Platform>
+        <Platform Name="iOS"></Platform>
+        <Platform Name="PS4"></Platform>
+        <Platform Name="Linux"></Platform>
+        <Platform Name="Mac"></Platform>
+        <Platform Name="Windows"></Platform>
+        <Platform Name="XboxOne"></Platform>
+        </PlatformSupport>
+    </PluginInfo>
+    <Properties>
+      <Property Name="base_frequency" Type="Real32" SupportRTPCType="Exclusive">
+        <UserInterface DisplayName="base_frequency" Step="0.01" Fine="0.001" Decimals="2" />
+        <DefaultValue>6000.0</DefaultValue>
+        <AudioEnginePropertyID>0</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>60.0</Min>
+              <Max>22000.0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="filter_res" Type="Real32" SupportRTPCType="Exclusive">
+        <UserInterface DisplayName="filter_res" Step="0.01" Fine="0.001" Decimals="2" />
+        <DefaultValue>20.0</DefaultValue>
+        <AudioEnginePropertyID>1</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0.0</Min>
+              <Max>500.0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="random_amount" Type="Real32" SupportRTPCType="Exclusive">
+        <UserInterface DisplayName="random_amount" Step="0.01" Fine="0.001" Decimals="2" />
+        <DefaultValue>0.0</DefaultValue>
+        <AudioEnginePropertyID>2</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0.0</Min>
+              <Max>5000.0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="trigger" Type="Real32" SupportRTPCType="Exclusive">
+        <UserInterface DisplayName="trigger" Step="0.01" Fine="0.001" Decimals="2" />
+        <DefaultValue>0.0</DefaultValue>
+        <AudioEnginePropertyID>3</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0.0</Min>
+              <Max>1.0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+    </Properties>
+  </SourcePlugin>
+</PluginModule>
